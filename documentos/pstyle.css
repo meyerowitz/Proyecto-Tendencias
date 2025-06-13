@@ -1,0 +1,74 @@
+/* estilos.css */
+* { 
+
+}
+a:link, a:visited, a:hover, a:active {
+  /*color a acceder y formulario*/
+ color:#f5b041 ;
+  font-size:16px;
+}
+
+
+body {
+/*intenta pintar la pagina y desaparece*/
+  
+}
+h1 {
+  
+}
+p {
+  font-size:16px;
+}
+
+#cabecera {
+/*pinta la cabecera, pone el tamaño */
+  
+  background-color:#d6eaf8;
+  padding:10px;
+}
+
+#pie { 
+ 
+}
+
+#contenedor {
+ margin:0 auto;
+  width:800px;
+  overflow-x: auto; /* Habilita la barra de desplazamiento horizontal */
+  overflow-y: scroll; /* Habilita la barra de desplazamiento vertical */
+  width: 100vw; /* Ancho total del viewport */
+  height: 200vh; /* Alto total del viewport */
+  
+}
+#contenido {
+ background-color:#ddd;
+  float:left;
+  height:1200px;
+  padding:10px;
+  width:760px;
+  #contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#menu {
+/*pinta el lateral izwuierdo, lo pone en izquierda, derecha, etc, pone el tamaño */
+  background-color:#3498db;
+  float:left;
+  height:700px;
+  padding:20px;
+  width:180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

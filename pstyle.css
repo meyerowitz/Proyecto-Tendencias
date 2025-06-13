@@ -1,0 +1,76 @@
+/* estilos.css */
+* { 
+  margin:0;
+  padding:0;
+}
+a:link, a:visited, a:hover, a:active {
+  color:#0f0;
+  font-size:16px;
+}
+
+
+body {
+  background:#eee;
+  font-family:verdana;
+}
+h1 {
+  color:#c0c;
+  font-size:24px;
+}
+p {
+  font-size:16px;
+}
+
+#cabecera {
+  color:#ff9;
+  background-color:#bbb;
+  padding:10px;
+}
+
+#pie { 
+  color:#900;
+  background-color:#bbb;  
+  padding:10px;
+  clear:both;  
+  text-align:center;
+}
+
+#contenedor {
+  margin:0 auto;
+  width:800px;
+  overflow-x: auto; /* Habilita la barra de desplazamiento horizontal */
+  overflow-y: scroll; /* Habilita la barra de desplazamiento vertical */
+  width: 100vw; /* Ancho total del viewport */
+  height: 200vh; /* Alto total del viewport */
+}
+#contenido {
+  background-color:#ddd;
+  float:left;
+  height:1200px;
+  padding:10px;
+  width:760px;
+  #contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+#menu {
+  background-color:#999;
+  float:left;
+  height:1180px;
+  padding:20px;
+  width:180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+#sidebar-wrapper {
+    width: 250px;
+}
+
+.navbar-nav.sidebar {
+    background-color: #f8f9fa;
+}
+
+.nav-link {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.submenu {
+    display: none;
+}
+
+.nav-link:hover .submenu {
+    display: block;
+}

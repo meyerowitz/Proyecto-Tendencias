@@ -1,0 +1,108 @@
+﻿/* estilos.css */
+* { 
+  margin:0;
+  padding:0;
+}
+a:link, a:visited, a:hover, a:active {
+/*color letras accerder y formulario*/
+  color:#f5b041 ;
+  font-size:16px;
+}
+
+
+body {
+  background:#d6eaf8 ;
+  font-family:verdana;
+}
+h1 {
+  color:#c0c;
+  font-size:24px;
+}
+p {
+  font-size:16px;
+}
+
+#cabecera {
+
+  /*color cabecera y tamaño*/
+  background-color:#d6eaf8;
+  padding:10px;
+}
+
+#pie { 
+/*todo el pie*/
+  color:#900;
+  background-color:#d6eaf8;  
+  padding:10px;
+  clear:both;  
+  text-align:center;
+}
+
+#lateral { 
+/*todo el lateral*/
+ 
+   background-color:#3498db;
+  float: right;
+
+  height:900px;
+  padding:10px;
+  width:240px;
+}
+
+
+
+
+
+
+#contenedor {
+  margin:0 auto;
+  width:800px;
+  overflow-x: auto; /* Habilita la barra de desplazamiento horizontal */
+  overflow-y: scroll; /* Habilita la barra de desplazamiento vertical */
+  width: 100vw; /* Ancho total del viewport */
+  height: 200vh; /* Alto total del viewport */
+}
+#contenido {
+/*colo medio t tamaño */
+  background-color:#bcd3e3 ;
+  float:left;
+  height:900px;
+  padding:10px;
+  width:838px;
+  #contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+#lateral2 { 
+/*todo el lateral*/
+ 
+   background-color:#bcd3e3;
+  float: right;
+
+  height:900px;
+  padding:20px;
+  width:240px;
+}
+#menu {
+/*color franja menu*/
+  background-color:#3498db;
+  float:left;
+  height:900px;
+  padding:20px;
+  width:180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
