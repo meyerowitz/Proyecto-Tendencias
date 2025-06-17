@@ -4,7 +4,7 @@
         <head>
             <meta charset="utf-8">
             <title>Acceder</title>
-            
+            <link rel="icon" href="./uneg.png" >
             
         </head>
         <style>
@@ -108,9 +108,25 @@ font-size:45px;
   }
   
   .logo {
-    border-radius: 50%;
     display: block;
     margin: 0 auto; 
+    width: 50px;
+  }
+
+  #sidebar ul li a{
+    text-decoration: none;
+ font-family: Arial Narrow;
+font-size: 20px;
+letter-spacing: 0px;
+word-spacing: 0px;
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+
+
   }
   
 #toggle-btn {
@@ -527,7 +543,7 @@ font-size:45px;
               </div>
             <ul>
                 <li>
-                  <img src="img/logo.jpg" alt="Logo Fazt" class="logo">
+                  <img src="./uneg.png" alt="Logo Fazt" class="logo">
                 </li>
                 <li><a href="./frame/index.php">Inicio</a> </li>
                 <li><a href="#">Perfil</a> </li>
