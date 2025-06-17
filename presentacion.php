@@ -117,9 +117,10 @@ font-size:45px;
     position: absolute;
     left: 215px;
     top: 12px;
-    background: #151719;
+    background:darkblue;
     cursor: pointer;
     transition: all 0.5s linear;
+    border-radius:5px;
   }
   
 #toggle-btn span {
@@ -145,9 +146,9 @@ font-size:45px;
                 color: white;
                 padding: 20px;
                 position: absolute;
-                left:15%;
-                top:2%;
-                z-index: 2;
+                left:-1.5%;
+                top:-5%;
+                z-index: 1;
             }
             .div {
                 background-color: #ffffff;
@@ -164,6 +165,167 @@ font-size:45px;
             p {
                 color: #666666;
             }
+
+/* ====================================================== */
+/* Estilos para el TÍTULO con efecto de AUREOLA en las letras */
+/* ====================================================== */
+/* En tu archivo CSS o dentro de una etiqueta <style> */
+
+/* ====================================================== */
+/* Estilos para el TÍTULO con efecto glowing */
+/* ====================================================== */
+.titulo-glowing {
+  /* Propiedades base copiadas de .button-85 */
+  padding: 0.5em 3.5em;
+  border: 1px solid white; /* Mantener borde blanco si lo deseas */
+  outline: none;
+  background: #111; /* Fondo oscuro para que el brillo resalte */
+  cursor: default; /* Un título no es un botón, no necesita cursor de puntero */
+  position: relative; /* Muy importante para que ::before y ::after se posicionen correctamente */
+  z-index: 1; /* Asegura que el título esté sobre el efecto */
+  border-radius: 10px; /* Bordes redondeados */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+
+  /* Propiedades específicas del título, ajustadas para el efecto */
+  font-family: 'Anton', sans-serif;
+  font-size: 45px; /* Tamaño de fuente del título original */
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: rgb(255, 255, 255); /* CAMBIO: Color del texto a blanco para que contraste con el fondo oscuro y el brillo */
+  font-weight: bold;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Ajustes de posicionamiento si es un título principal */
+  display: inline-block; /* Permite que el padding y el ancho se apliquen correctamente */
+  margin: 20px auto; /* Para centrarlo si lo deseas */
+  
+  /* Ajuste para el z-index si está dentro de .encabezado */
+  /* Si el .encabezado ya tiene position: absolute; y z-index: 2, esto puede que no sea necesario */
+  /* Pero es buena práctica ponerlo para el pseudoelemento */
+}
+
+.titulo-glowing::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1; /* Detrás del texto del título */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite; /* Misma animación */
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.titulo-glowing::after {
+  z-index: -1; /* Detrás del texto del título */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: darkblue; /* CAMBIO: El color de fondo del título para que el brillo se vea a través de él */
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* La animación @keyframes glowing-button-85 ya la tienes definida y es la misma que usaremos */
+/* NO necesitas duplicar @keyframes glowing-button-85 */
+
+/* Código existente de .button-85 */
+.button-85 {
+  padding: 0.5em 2em;
+  border: 1px solid white;
+  outline: none;
+  color: rgb(12, 11, 42); /* Color de texto original */
+  background: #111;
+  cursor: pointer;
+  position: absolute;
+  z-index: 11;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+  top: 40%;
+  right: 50%;
+  font-size: 45px;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255); /* Color de fondo del botón */
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* Resto de tu CSS... */
+
             .divcanvas{
                 justify-content: center;
                 align-items: center;
@@ -375,8 +537,8 @@ font-size:45px;
             </ul>
           </div>
             <div id="Encabezado" class="encabezado">    
-                <h1>Servicio Comunitario UNEG</h1>
-                <p>Tejiendo el futuro con IA</p>
+                <h1 class="titulo-glowing">Servicio Comunitario UNEG</h1>
+                <p style="font-size:35px; color: darkblue">Tejiendo el futuro con IA</p>
             </div>
             
             <!-- HTML !-->
